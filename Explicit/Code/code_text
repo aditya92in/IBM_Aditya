@@ -1,1 +1,3 @@
 code-explicit
+The execution starts from the main. If you want to make changes, mind the stability criteria for the time step, and also the grid point
+inside the cylinder. Grid plotting can be used for that. 
