@@ -4,18 +4,22 @@ inside the cylinder. Grid plotting can be used for that.  Grid and Boundary Cond
 
 Boundary Conditions
 
-Left Boundary (u=1,v=0,dp/dx=0)     TOP (du/dy=0 v =0, dp/dy=0)   Right Boundary (du/dx=0, dv/dx=0,p=0) 
+Left Boundary (u=1,v=0,dp/dx=0)     BOTTOM (du/dy=0 v =0, dp/dy=0)   Right Boundary (du/dx=0, dv/dx=0,p=0) 
                 _ __ ____________________________________________   
                |                                                 |                         |y axis
                |                                                 |                         | 
                |                                                 |                         | 
                |                                                 |                         |____________________x axis
                |_ _____________________________________________  |
-                           BOTTOM (du/dy=0 v=0, dp/dy=0)
+                           TOP (du/dy=0 v=0, dp/dy=0)
 
 L_x= length of the domain in x direction
 L_y=length of the domain in y direction
-Note, that i use matlab convention. 
+Note, that i use matlab convention. so u(imax,jmax) in cartesian coordinates is u(y,x). 
+Also note,
+the y coordinate increases in the downward direction. AS per MATLAB.
+the x coordinate increases as we move towards right.
+
 So imax---> no of INTERIOR grid points in y direction
 jmax---> no of INTERIOR grid points in x direction
 Note, that its a staggered grid.
