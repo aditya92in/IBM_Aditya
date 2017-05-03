@@ -8,10 +8,10 @@ tic
 %omega=1.5;
 while(err>1e-8)&&(count<20)
     %boundary conditions
-    piter(:,1)=piter(:,2); %dp/dx=0;
-    piter(:,end)=-piter(:,end-1); %P=0
-    piter(1,:)=-piter(2,:);%p=0; south boundary
-    piter(end,:)=-piter(end-1,:);%p=0 ;north boundary
+    %piter(:,1)=piter(:,2); %dp/dx=0;
+    %piter(:,end)=-piter(:,end-1); %P=0
+    %piter(1,:)=piter(2,:);%dp/dy=0; south boundary
+    %piter(end,:)=piter(end-1,:);%dp/dy=0 ;north boundary
 %     pnew(:,1)=pnew(:,2); %dp/dx=0;
 %     pnew(:,end)=-pnew(:,end-1); %P=0
 %     pnew(1,:)=pnew(2,:);%dp/dy=0; south boundary
@@ -34,10 +34,10 @@ count=count+1;
 %pause(0.1)
 pnew=piter;
 end
-    pnew(:,1)=pnew(:,2); %dp/dx=0;
-    pnew(:,end)=-pnew(:,end-1); %P=0
-    pnew(1,:)=-pnew(2,:);%p=0; south boundary
-    pnew(end,:)=-pnew(end-1,:);%p=0 north boundary
+    pnew(:,1)=pnew(:,2); %dp/dx=0; WEST
+    pnew(:,end)=-pnew(:,end-1); %P=0 EAST
+    pnew(1,:)=pnew(2,:);%dp/dy=0; south boundary
+    pnew(end,:)=pnew(end-1,:);%dp/dy=0 north boundary
     p=pnew;
     %disp(['time spent in poissson=',num2str(toc)]);
     
