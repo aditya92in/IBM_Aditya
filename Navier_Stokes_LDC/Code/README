@@ -1,0 +1,21 @@
+Note, this is the same Navier_Stokes Code for the flow between parallel plates for the Lid_Driven Cavity flow, 
+subject to these boundary conditions
+
+                  u=2, v=0, p=0     TOP
+         _______________________________________________
+        |                                                | 
+        |                                                |
+        |                                                |
+        |                                                |  
+        |                                                |
+        |                                                |
+        |________________________________________________|
+    Left                               BOTTOM                   Right
+    u=0 v=0 dp/dx=0                 u=0 v=0 dp/dy=0       u=0 v=0 dp/dx=0
+    
+    
+    There a few optimizations to do
+    1. Make it consume less memory, which i have already done for the IBM VS case
+    2. Implement it with Reynolds Number. Update will follow soon.
+    
+    
