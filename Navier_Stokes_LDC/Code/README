@@ -18,4 +18,5 @@ subject to these boundary conditions
     1. Make it consume less memory, which i have already done for the IBM VS case
     2. Implement it with Reynolds Number. Update will follow soon.
     
+    The execution of the code starts from the main.m file
     
