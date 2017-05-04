@@ -24,4 +24,6 @@ So imax---> no of INTERIOR grid points in y direction
 jmax---> no of INTERIOR grid points in x direction
 Note, that its a staggered grid.
 posn of the cylinder ---> (x_c,y_c) it is placed at 0.55*L_x from the LEFT Boundary
+
+The execution of the code starts from the main.m file.
  
