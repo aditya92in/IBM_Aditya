@@ -1,0 +1,30 @@
+code-explicit
+The execution starts from the main. If you want to make changes, mind the stability criteria for the time step, and also the grid point
+inside the cylinder. Grid plotting can be used for that.  Grid and Boundary Conditions are shown below
+
+Boundary Conditions
+
+Left Boundary (u=1,v=0,dp/dx=0)     BOTTOM (du/dy=0 v =0, dp/dy=0)   Right Boundary (du/dx=0, dv/dx=0,p=0) 
+                _ __ ____________________________________________   
+               |                                                 |                         |y axis
+               |                                                 |                         | 
+               |                                                 |                         | 
+               |                                                 |                         |____________________x axis
+               |_ _____________________________________________  |
+                           TOP (du/dy=0 v=0, dp/dy=0)
+
+L_x= length of the domain in x direction
+L_y=length of the domain in y direction
+Note, that i use matlab convention. so u(imax,jmax) in cartesian coordinates is u(y,x). 
+Also note,
+the y coordinate increases in the downward direction. AS per MATLAB.
+the x coordinate increases as we move towards right.
+
+So imax---> no of INTERIOR grid points in y direction
+jmax---> no of INTERIOR grid points in x direction
+Note, that its a staggered grid.
+posn of the cylinder ---> (x_c,y_c) it is placed at 0.55*L_x from the LEFT Boundary
+
+The execution of the code starts from the main.m file.
+ 
+Note, that the code follows PRESSURE CORRECTION METHOD for pressure velocity coupling as followed in Fractional Step Methods
