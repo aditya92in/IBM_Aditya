@@ -40,6 +40,8 @@ uold=b_c_u(uold,U_w,U_e,U_s,U_n);
 vold=b_c_v(vold,V_w,V_e,V_s,V_n);
 %*********************************get u star and vstar
 [u_star,v_star]=momentum(uold,vold,dx,dy,dt,rho,mu);
+u_star=b_c_u(u_star,U_w,U_e,U_s,U_n);
+v_star=b_c_v(v_star,V_w,V_e,V_s,V_n);
 %*****************get u star
 %*************************compute rhs
 rhs(2:end-1,2:end-1)=get_rhs(u_star,v_star,dx,dy,dt,rho);
