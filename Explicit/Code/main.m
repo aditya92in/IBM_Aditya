@@ -82,6 +82,8 @@ vold=b_c_v(vold,V_w,V_e,V_s,V_n);
 %*********************************get u star and vstar
 [A_u(2:end-1,2:end-1,count_star),D_u(2:end-1,2:end-1,count_star),A_v(2:end-1,2:end-1,count_star),D_v(2:end-1,2:end-1,count_star)]=momentum(uold,vold,dx,dy);
 [u_star,v_star]=Adams_Bashforth(A_u,D_u,A_v,D_v,uold,vold,dt,dx,dy,Re,count_star);
+u_star=b_c_u(u_star,U_w,U_e,U_s,U_n);
+v_star=b_c_v(v_star,V_w,V_e,V_s,V_n);
 [F_x,F_y]=force_components(u_star,v_star,u_s,v_s,dt,phi_x,phi_y,dx,dy,rho);
 [C_d,C_l]=integral_quant(F_x,F_y,2*r,U_w,rho);
 C_d_arr(i)=C_d;
