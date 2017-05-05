@@ -27,3 +27,4 @@ posn of the cylinder ---> (x_c,y_c) it is placed at 0.55*L_x from the LEFT Bound
 
 The execution of the code starts from the main.m file.
  
+ Note, that the code follows PRESSURE FREE PROJECTION METHOD for pressure velocity coupling as done by Chorin
