@@ -46,6 +46,8 @@ vold=b_c_v(vold,V_w,V_e,V_s,V_n);
 %*********************************get u star and vstar
 [A_u(2:end-1,2:end-1,i),D_u(2:end-1,2:end-1,i),A_v(2:end-1,2:end-1,i),D_v(2:end-1,2:end-1,i)]=momentum(uold,vold,dx,dy,rho,mu);
 [u_star,v_star]=Adams_Bashforth(A_u,D_u,A_v,D_v,uold,vold,dt,dx,dy,rho,i);
+u_star=b_c_u(u_star,U_w,U_e,U_s,U_n); %update
+v_star=b_c_v(v_star,V_w,V_e,V_s,V_n); %update
 %*****************get u star
 %*************************compute rhs
 rhs(2:end-1,2:end-1)=get_rhs(u_star,v_star,dx,dy,dt,rho);
