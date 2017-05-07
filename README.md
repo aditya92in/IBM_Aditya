@@ -6,3 +6,4 @@ I plan to simulate a moving cylinder using this code as well. The code is implem
 Updates:
 
 1. Pressure Correction is implemented in Pressure Correction
+2. I plan to use collocated grids soon enough, if indexing gets too complicated on deformable boundaries (also one of my test cases for vortex shedding )
