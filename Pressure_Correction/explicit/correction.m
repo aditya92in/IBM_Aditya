@@ -14,14 +14,14 @@ function [unew,vnew]= correction(u_d_star,v_d_star,pcorr,dt,dx,dy)
 %vnew(2:end-1,2:end-1)=v_d_star(2:end-1,2:end-1)+fnew_y(2:end-1,2:end-1).*dt;
 
 %boundary conditions
-unew(1,:)=-unew(2,:);
-unew(end,:)=-unew(end-1,:);
+%unew(1,:)=-unew(2,:);
+%unew(end,:)=-unew(end-1,:);
 
 %boundary conditions
- vnew(1,:)=0;          
- vnew(end,:)=0;
- vnew(:,1)=-vnew(:,2);
- vnew(:,end)=vnew(:,end-1);
+ %vnew(1,:)=0;          
+ %vnew(end,:)=0;
+ %vnew(:,1)=-vnew(:,2);
+ %vnew(:,end)=vnew(:,end-1);
 
             
 end
