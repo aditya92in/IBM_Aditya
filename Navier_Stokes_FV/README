@@ -22,3 +22,4 @@
  So imax---> no of INTERIOR grid points in y direction
  jmax---> no of INTERIOR grid points in x direction
  Note, that its a staggered grid.
+ The execution starts from the main.m file
