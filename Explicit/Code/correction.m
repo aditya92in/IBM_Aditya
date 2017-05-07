@@ -18,14 +18,14 @@ err_corr_v=norm(vnew(2:end-1,2:end-1)-v_d_star(2:end-1,2:end-1));
 %disp([' error in unew and u** ',num2str(err_corr_u),'error in vnew and v**',num2str(err_corr_v)]);
 %pause(1);
 %boundary conditions
-unew(1,:)=-unew(2,:);
-unew(end,:)=-unew(end-1,:);
+%unew(1,:)=-unew(2,:);
+%unew(end,:)=-unew(end-1,:);
 
 %boundary conditions
- vnew(1,:)=0;          
- vnew(end,:)=0;
- vnew(:,1)=-vnew(:,2);
- vnew(:,end)=vnew(:,end-1);
+ %vnew(1,:)=0;          
+ %vnew(end,:)=0;
+ %vnew(:,1)=-vnew(:,2);
+ %vnew(:,end)=vnew(:,end-1);
 
             
 end
