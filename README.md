@@ -7,3 +7,4 @@ Updates:
 
 1. Pressure Correction is implemented in Pressure Correction
 2. I plan to use collocated grids soon enough, if indexing gets too complicated on deformable boundaries (also one of my test cases for IBM )
+3. Upwinding schemes could be used for this as well. That too should be done.
