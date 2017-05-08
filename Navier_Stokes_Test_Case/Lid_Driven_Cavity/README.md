@@ -30,3 +30,8 @@ Boundary Conditions for LDC
  jmax---> no of INTERIOR grid points in x direction
  Note, that its a staggered grid.
  The execution starts from the main.m file
+
+
+Updates
+
+1. no more first starts, this is version 1. 
