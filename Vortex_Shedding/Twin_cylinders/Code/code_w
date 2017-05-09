@@ -1,1 +1,6 @@
 code
+Note, the computed C_d values and C_l values are for the top cylinder only. 
+Whether they remain the same and how to compute them for different T/D will be updated soon.
+In the results, only the velocity vectors are shown .
+Vorticity needs to be plotted as well. In the video xlabel is x axis, y label is y axis.
+Pressure needs to plotted, Velocity contours need to be plotted
