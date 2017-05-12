@@ -1,0 +1,23 @@
+#!/bin/bash -l
+# use bash as shell
+# the -l option is necessary to make the local enviroment equal to the login environment
+
+# slurm commands start with #SBATCH
+# all other stuff behind a # on the same line is comment 
+
+#SBATCH -D ./home12233/aditya/aditya/Fractional_Step_Method/IB_Cylinder/IB_Other_Method/Validation_Case/Validation_Case/NS_Reynolds_to_be_with_ADI/poisson_with_Seidel/Code                     # directory where the problem is ran
+#SBATCH -J main.m                  # name of the job (can be changed to whichever name you like)
+#SBATCH --get-user-env             # to set environment variables
+#SBATCH -o output.log              # output file
+#SBATCH -e output.log              # error file
+#SBATCH --mem=32000                # memory per node in megabytes
+#SBATCH --time=0-00:00:10          # simulation time in d-hh:mm:ss
+#SBATCH -n 8                       # number of CPUS
+#SBATCH -N 1                       # number of nodes
+
+
+uname -a
+
+
+
+
